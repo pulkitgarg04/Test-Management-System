@@ -1,0 +1,83 @@
+<%- include("../layout/boilerplate.ejs") %>
+
+  <body>
+
+    <%- include("../includes/header.ejs") %>
+      
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+          <li class="nav-item">
+              <a class="nav-link collapsed" href="/dashboard">
+                  <i class="bi bi-grid"></i><span>All Exams</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link collapsed" href="/dashboard/ongoing">
+                  <i class="fa-regular fa-file-lines"></i><span>Ongoing</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link collapsed" href="/dashboard/completed">
+                  <i class="fa-solid fa-square-check"></i></i><span>Completed</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/dashboard/upcoming">
+                  <i class="fa-solid fa-file-export"></i><span>Upcoming</span>
+              </a>
+          </li>
+      </ul>
+  </aside>
+
+        <main id="main" class="main">
+          <div class="pagetitle">
+            <h1>Dashboard</h1>
+            <nav>
+              <p class="breadcrumb">Home / Dashboard / Upcoming</p>
+            </nav>
+          </div>
+          <section class="section dashboard mt-5">
+            <h4 class="mt-2">Upcoming</h4>
+            <div class="row">
+              <div class="card m-3 p-2" style="width: 20rem;">
+                <div class="card-body">
+                  <h4 class="card-title">Operating System</h4>
+                  <p class="card-subtitle mb-2 text-muted" style="font-size: 13px;">09:00 AM - 10:00 AM (25 March 2024)
+                  </p>
+                  <button type="button" class="btn btn-outline-primary mt-1 disabled">Give Test</button>
+                </div>
+              </div>
+              <div class="card m-3 p-2" style="width: 20rem;">
+                <div class="card-body">
+                  <h4 class="card-title">System Design</h4>
+                  <p class="card-subtitle mb-2 text-muted" style="font-size: 13px;">09:00 AM - 10:00 AM (25 March 2024)
+                  </p>
+                  <button type="button" class="btn btn-outline-primary mt-1 disabled">Give Test</button>
+                </div>
+              </div>
+            <div class="card m-3 p-2" style="width: 20rem;">
+              <div class="card-body">
+                <h4 class="card-title">Differential Equations</h4>
+                <p class="card-subtitle mb-2 text-muted" style="font-size: 13px;">09:00 AM - 10:00 AM (25 March 2024)
+                </p>
+                <button type="button" class="btn btn-outline-primary mt-1 disabled">Give Test</button>
+              </div>
+            </div>
+            <div class="card m-3 p-2" style="width: 20rem;">
+              <div class="card-body">
+                <h4 class="card-title">Data Structures & Algorithms</h4>
+                <p class="card-subtitle mb-2 text-muted" style="font-size: 13px;">09:00 AM - 10:00 AM (25 March 2024)
+                </p>
+                <button type="button" class="btn btn-outline-primary mt-1 disabled">Give Test</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      </main>
+      
+        <%- include("../includes/footer.ejs") %>
+
+      </body>
+      
+      </html>
